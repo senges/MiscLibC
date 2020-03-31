@@ -18,9 +18,9 @@ int verbose(const char * restrict format, ...) {
 }
 
 /* Program panic */
-void program_panic(const char * msg, const int code) {
+void program_panic(const char * err_msg, const int err_code) {
     fprintf(stderr, "Program panic in file `%s' line %d\n", __FILE__, __LINE__);
-    fprintf(stderr, "Error code [%d] : %s\n", code, msg);
+    fprintf(stderr, "Error code [%d] : %s\n", err_code, err_msg);
 
     exit(EXIT_FAILURE);
 }
