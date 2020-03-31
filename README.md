@@ -7,7 +7,7 @@ Printf-like function that prints only when v_flag > 0
 **panic**
 
 Program panic function.  
-Support format :
+Supports format :
 
 ```c
 panic()
